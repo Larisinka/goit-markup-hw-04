@@ -376,6 +376,29 @@ body {
 
 /* section 5 - our clients */
 
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 170px;
+  max-height: 92px;
+}
+
+.clients-icon {
+  max-width: 170px;
+  max-height: 92px;
+}
+
 /* footer for index.html and portfolio.html */
 
 .footer {
