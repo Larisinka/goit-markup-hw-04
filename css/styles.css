@@ -8,6 +8,11 @@
   --primary-background-color: #f5f4fa;
   --secondary-backgroung-color: #2f303a;
 
+  /* icons colors */
+  --icons-color: #afb1b8;
+  --icons-bg-color: #2196f3;
+  --icons-hover-color: #fff;
+
   /*  */
   --items: 3;
   --indent: 30px;
@@ -142,7 +147,8 @@ body {
 
 .nav-contacts-email,
 .nav-contacts-tel {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -152,6 +158,11 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
+}
+
+.icon-contacts {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* index.html main */
@@ -300,8 +311,9 @@ body {
   margin-right: 30px;
 }
 
-.team-member-picture {
-  margin-bottom: 30px;
+.team-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-member {
@@ -313,13 +325,42 @@ body {
   margin-bottom: 10px;
 }
 
-.team-member-profession {
+.team-member-position {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-bottom: 30px;
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
+}
+
+.team-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icons-color);
+  background-color: red;
+}
+
+.team-social__link:hover {
+  background-color: var(--icons-bg-color);
+  color: var(--icons-hover-color);
+}
+
+.icon {
+  fill: currentColor;
 }
 
 /* section 5 - our clients */
