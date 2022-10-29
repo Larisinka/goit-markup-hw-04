@@ -151,7 +151,6 @@ body {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -220,7 +219,8 @@ body {
   cursor: pointer;
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   background: var(--button-color);
 }
 
@@ -365,7 +365,8 @@ body {
   color: var(--icons-color);
 }
 
-.team-social__link:hover {
+.team-social__link:hover,
+.team-social__link:focus {
   background-color: var(--icons-bg-color);
   color: var(--icons-hover-color);
 }
@@ -390,13 +391,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 170px;
-  max-height: 92px;
+  width: 170px;
+  height: 92px;
+  color: var(--icons-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--icons-bg-color);
+  border: 1px solid var(--icons-bg-color);
 }
 
 .clients-icon {
-  max-width: 170px;
-  max-height: 92px;
+  fill: currentColor;
 }
 
 /* footer for index.html and portfolio.html */
