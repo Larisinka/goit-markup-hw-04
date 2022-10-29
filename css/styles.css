@@ -371,7 +371,7 @@ body {
   color: var(--icons-hover-color);
 }
 
-.icon {
+.team-icon {
   fill: currentColor;
 }
 
@@ -416,6 +416,15 @@ body {
   padding-bottom: 60px;
 }
 
+.footer-wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer .address-wrap {
+  margin-right: 70px;
+}
+
 .footer .logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -451,6 +460,49 @@ body {
 .address-item a:hover,
 .address-item a:focus {
   color: var(--link-color);
+}
+
+/* footer - subscribe */
+
+.footer .subscribe-subtitle {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--primary-white-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social__link:hover,
+.footer-social__link:focus {
+  background-color: var(--icons-bg-color);
+  color: var(--icons-hover-color);
+}
+
+.footer-social__icon {
+  fill: currentColor;
 }
 
 /*  */
