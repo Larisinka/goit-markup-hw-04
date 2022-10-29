@@ -554,6 +554,12 @@ body {
 .portfolio-item {
   flex-basis: calc((100% - var(--indent) * (var(--items)-1)) / var(--items));
 }
+.portfolio-item:hover,
+.portfolio-item:focus {
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .portfolio-text {
   padding-top: 20px;
