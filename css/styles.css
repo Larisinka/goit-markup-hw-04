@@ -240,10 +240,22 @@ body {
 
 .advantages-list {
   display: flex;
+  gap: 30px;
 }
 
-.advantages-item:not(:last-child) {
+/* .advantages-item:not(:last-child) {
   margin-right: 30px;
+} */
+
+.advantages .wrap-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 
 .advantages-subtitle {
@@ -351,7 +363,6 @@ body {
   height: 44px;
   border-radius: 50%;
   color: var(--icons-color);
-  background-color: red;
 }
 
 .team-social__link:hover {
